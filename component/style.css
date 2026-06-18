@@ -1,0 +1,883 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-image: url("../images/images5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+
+    -webkit-backdrop-filter: blur(2px); 
+    backdrop-filter: blur(2px);       
+}
+
+header{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 80px;
+    background-image: image("url(../images/porsche-porsche-911.jpg)");
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+.logo img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nav-pill{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:rgba(250, 248, 248, 0.95);
+    padding:8px;
+    border-radius:40px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+.nav-pill a{
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+    padding:10px 24px;
+    border-radius:25px;
+    transition:.3s;
+    background-color: #f2f2f2;
+    width: fit-content;
+}
+
+.nav-pill a.active{
+    background:#ff8080;
+    color:#000;
+}
+
+.nav-pill a:hover{
+    background:#f2f2f2;
+}
+
+.menu-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+}
+
+
+.start-btn{
+    text-decoration:none;
+    color:#000;
+
+    background:#ff8080;
+    padding:14px 24px;
+    border-radius:30px;
+
+    font-size:12px;
+    font-weight:600;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.start-btn i{
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#ff6a6a;
+    color:white;
+    border-radius:50%;
+}
+
+
+.hero-content{
+    position:absolute;
+    z-index:2;
+
+    left:80px;
+    top:50%;
+
+    transform:translateY(-40%);
+}
+
+.hero-content h1{
+    color:white;
+    font-size:72px;
+    line-height:0.95;
+    font-weight:700;
+}
+
+.hero-content p{
+    margin-top:15px;
+    color:white;
+    font-size:20px;
+}
+
+
+.info-bar{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+
+    z-index:2;
+
+    background:#ff9a9a;
+    color:#2b2b2b;
+
+    padding:16px 25px;
+    font-size:14px;
+}
+
+@media(max-width:900px){
+
+    header{
+        padding:20px;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .hero-content{
+        left:30px;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .nav-pill{
+        scale:.9;
+    }
+}
+.container{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+.loadmore{
+    margin-left: 70%;
+    text-decoration: none;
+    font-size: x-small;
+    background-color: rgb(248, 232, 232);
+    color: color(from color srgb r g b);
+    padding: 15px 20px;
+    border-radius:20px;
+    font-weight: 500;
+    
+}
+.cards{
+    display: flex;
+    
+}
+.container1 ,img{
+    display: flex;
+}
+.container1{
+    margin-left: 80px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    font-size: 15px;
+    width: 22%;
+    display: flex;
+    justify-items: 2px;
+}
+.container1 , h6{
+    font-weight:normal;
+}
+.content{
+    padding-left:10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contain2{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card-img img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.card-img {
+    background: none;      
+    padding-right: 0px;
+    margin: 0;
+    flex-shrink: 0;
+    
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5bd7c;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;           
+    background: none;    
+    font-size: 10px; 
+}
+.about{
+    display: flex;
+    margin-top: 30px;
+}
+.about img{
+    display: flex;
+    border: 80px solid #f6ecec;
+    width: 30%;
+    margin-left: 18%;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+.about img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+.about-content h4{
+    display: inline-block;
+    width: fit-content;
+    background: lightblue;
+    padding: 1px 16px;
+    border-radius: 30px;
+    font-size: 8px;
+    margin-left: 50px;
+    color: blueviolet;
+}
+.about-content{
+    width: 37%;
+}
+.about-content h1, p{
+    margin-left: 50px;
+    padding-top: 10px;
+    
+
+}
+.about-content .start-btn{
+    width: fit-content;
+    display: flex;
+
+}
+.start-btn{
+    text-decoration: none;
+    background: salmon;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+}
+
+.arrow-icon{
+    font-size: 16px;
+    color: black;
+}
+.Catholicate{
+    margin-top: 15%;
+}
+.catholicate-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.container3{
+    width: 37%;
+    margin-left: 6%;
+}
+.container3 h6 {
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+.container3 h5 {
+    padding-top: 20px;
+    color:#ff6a6a;
+}
+.container3 .start-btn{
+    width: fit-content;
+    margin-left: 5px;
+    color: black;
+}
+.imag img{
+    display: block;
+    transition: transform 0.5s;
+}
+.container3 .img{
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.photos{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.imags{
+    flex-direction: column;
+    display: flex;
+    
+}
+.photos .imag ,img{
+    border-radius: 20px;
+    
+
+}
+.kalpana{
+    background-color: #f6ecec;
+}
+.kalpana-inner{
+    display: flex;
+    flex-direction: row;
+    
+}
+.Kalpana{
+    margin-top: 140px;
+    margin-left: 6%;
+    
+}
+.Kalpana h6{
+    padding-top: 10px;
+}
+.Kalpana .start-btn{
+    width: fit-content;
+    margin-left: 0px;
+    color: black;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    flex: 1;  
+    margin-left: 6%;
+}
+.main-box {
+    padding-top: 92px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #e5bd7c;
+    margin-right: 40px;
+    padding-top: 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 326px;
+    margin-bottom: -108px;
+    
+   
+    
+}
+.main-box:hover{
+    background-color: #ff6a6a;
+    color: #000;
+}
+.sub .text {
+    display: flex;
+    flex-direction: column;  
+}
+.box .start-btn {
+    width: fit-content;
+    white-space: nowrap;     
+    color: black;
+    
+}
+.text{
+    margin-bottom: 112px;
+    padding-left: 17px;
+}
+.main-box .fa-cross{
+    background-color: rgb(223, 197, 197);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-top: 3px;
+    color: salmon;
+    
+
+}
+.fa-cross:hover{
+    background-color: white;
+}
+.sub .start-btn{
+    margin-top: -129px;
+    
+}
+.start-btn:hover{
+    background-color: white;
+    color: #000;
+}
+.container4{
+    margin-top: 10%;
+    margin-left: 6%;
+
+    display: flex;
+    flex-direction: column;     
+    justify-content: space-between;
+}
+.container4 h4{
+    display: inline-block;
+    width: fit-content;
+    background: lightblue;
+    padding: 5px 16px;
+    border-radius: 30px;
+    font-size: 8px;
+    margin-left: 50px;
+    color: blueviolet;
+
+}
+.upcomings-inner {
+    display: flex;
+    flex-direction: row;
+}
+.event .start-btn{
+    margin-top: 140px;
+    margin-left: 440%;
+    width: fit-content;
+
+}
+.Updatess img{
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-top: 40px;
+    
+}
+.Updates {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 6%;
+}
+.contents{
+    background-color: #ff6a6a;
+    border-radius: 10px;
+    width: 60px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top:40px ;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+.contents h3{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    
+
+    
+}
+.Updates :hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.contents span{
+    background-color: #fafafa;
+    border-radius: 35px;
+  
+    font-size: 16px;
+    font-weight: 700;
+    padding: 6px 8px;
+
+}
+.contents span:hover{
+    background-color: #e81313;
+
+}
+.container5{
+    margin-top: 10%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.container5 h4{
+    display: inline-block;
+    width: fit-content;
+    background: lightblue;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 8px;
+    margin-left:10px;
+    color: blueviolet;
+    
+}
+.Calendar-inner{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: rgb(43, 6, 129);
+    margin-top: 80px;
+}
+.Calendar2{
+    margin-top: 116px;
+    margin-left: 60px;
+    width: 760px;
+    height: 70%;
+    background-color:#e5e5e5 ;
+    border-radius: 20px;
+}
+.Calendar2 h5{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.calen1{
+    padding-top: 30px;
+}
+.sub-cal{
+    display: flex;
+    flex-direction: row;
+}
+.hash{
+    margin-top:50px ;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.hashes  h5{
+    margin-bottom:8px;
+    padding-left: 10px;
+}
+.hashes h6{
+    padding-bottom: 8px;
+    padding-left: 10px;
+}
+.sub-cal{
+    display: flex;
+    flex-direction: row;
+}
+.Calendar6{
+    margin-left: -417px;
+    margin-top: 116px;
+    padding-top: 28px;
+    width: 30%;
+    background: #faf1f1;
+    border-radius: 20px;
+    margin-bottom: 69px;
+}
+
+.calen-main{
+    background: #e5bd7c;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 250px;
+    padding: 10px 53px;
+    margin-left: 66px;
+    margin-right: 93px;
+    flex-direction:row ;
+}
+
+.calen-main h5{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.calen-main .calendar-sub6:hover{
+    
+    width: 60px;
+    
+}
+
+.calen-main:hover h5{
+    color: white;
+}
+.calendar-sub1{
+    display: flex;
+    flex-direction: column;
+}
+.days{
+    flex-wrap: nowrap;
+    display: grid;
+    flex-direction: row;
+    margin-right: 60px;
+    padding-top: 40px;
+    padding-left: -11px;
+    grid-template-columns:repeat(7,1fr);
+    margin-left: 30px;
+    font-family:sans-serif;
+}
+/* .calender-dates{
+    flex-direction:row ;
+    display: flex;
+} */
+.dates{
+    flex-direction:column ;
+    display: grid;
+    grid-template-columns:repeat(7,1fr);
+    margin-right: -249px;
+}
+.dates div{
+    font-size:20px;
+}
+.active{
+    background:white;
+    width:35px;
+    height:35px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.red{
+    color:#ff7b7b;
+}
+.read {
+    padding-top: 80px;
+    margin-right: 21px;
+}
+
+.Latestevent-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 10%;
+}
+.lastevet h4{
+    display: inline-block;
+    width: fit-content;
+    background: lightblue;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 8px;
+    margin-left:10px;
+    color: blueviolet;
+    transition: transform 0.4s ease;
+}
+.lastevet h4:hover{
+    transform: scale(1.1) rotate(5deg);
+
+}
+
+.lastevet{
+    text-align: center;
+}
+
+.evtcard{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.eventcard{
+    width: 250px;
+    background-color: rgb(182, 230, 220);
+    border-radius: 15px;
+    height: 40%;
+
+}
+
+.eventcards img{
+    width: 90%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    margin-left: 12px;
+    margin-top: 16px;  
+    transition: transform 0.4s ease;
+}
+
+.eventcards img:hover{
+    transform: scale(1.1) rotate(9deg);
+  
+}
+
+.eventcards h5,
+.eventcards h2,
+.eventcards h6{
+    padding: 0 10px;
+}
+
+.eventcards h6{
+    padding-bottom: 20px;
+}
+.footer{
+    margin-top: 60px;
+    background: #1f1d70;
+    color: white;
+    padding: 60px;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 25%;
+}
+
+.footer-content img{
+    width: 80px;
+}
+
+.footer-about1{
+    display: flex;
+    gap: 80px;
+    flex: 1;
+}
+
+.footer-about{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-about .start-btn{
+    width: 150px;
+    margin-bottom: 124px;
+    margin-top: 225px;
+    margin-right: -295px;
+    height: 60px;
+    margin-left: -363px;
+   
+}
+
+.footer-socialmedia{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    margin-top: 466px;
+    margin-left: -448px;
+}
+
+.quick h3{
+    min-width: 300px;
+    margin-left: 105px;
+}
+
+.quick-links{
+    display: flex;
+    gap: 60px;
+    margin-left: 88px;
+    margin-top: 23px;
+}
+
+.others h6{
+    margin-bottom: 12px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us h6{
+    line-height: 1.8;
+}
+.contact-us{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.contact-no{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.footer-name{
+    margin-left: 40%;
+    margin-top: 40px;
+}
