@@ -881,3 +881,283 @@ header{
     margin-left: 40%;
     margin-top: 40px;
 }
+
+
+
+
+/* reponsive style effect */
+
+
+/* =====================================================
+   MOBILE RESPONSIVE CSS — MOSC Church Website
+   Add this at the BOTTOM of your existing style.css
+   ===================================================== */
+
+/* ── Tablet: 768px – 900px ── */
+@media (max-width: 900px) {
+
+    /* Hero */
+    .hero-content h1 { font-size: 48px; }
+    .hero-content { left: 30px; }
+  
+    /* Cards row */
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .container1 {
+      width: 80%;
+      margin-left: 0;
+    }
+  
+    /* Saints row */
+    .container2 {
+      gap: 12px;
+      padding: 12px;
+    }
+  
+    /* About */
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about img {
+      width: 70%;
+      margin-left: 0;
+      border: 30px solid #f6ecec;
+    }
+    .about-content {
+      width: 80%;
+      margin-top: 20px;
+    }
+    .about-content h1,
+    .about-content p,
+    .about-content .start-btn {
+      margin-left: 20px;
+    }
+  
+    /* Catholicate photos */
+    .catholicate-inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 20px;
+    }
+    .container3 { width: 90%; margin-left: 0; }
+    .photos { width: 90%; justify-content: center; }
+  
+    /* Kalpana */
+    .kalpana-inner {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .Kalpana { margin-top: 30px; margin-left: 0; text-align: center; }
+    .Kalpana .start-btn { margin: 16px auto 0; }
+    .box { margin-left: 0; width: 90%; }
+    .main-box { width: 100%; flex-direction: column; padding: 16px; }
+    .sub { flex-direction: column; gap: 12px; margin-bottom: 0; }
+    .sub .start-btn { margin-top: 10px; }
+    .text { margin-bottom: 0; padding-left: 0; }
+  
+    /* Upcoming events */
+    .upcomings-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container4 {
+      margin-left: 0;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .container4 h4 { margin-left: 0; }
+    .event .start-btn {
+      margin: 16px auto 0;
+      position: static;
+    }
+    .Updates {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 16px;
+      gap: 12px;
+    }
+    .Updatess img { width: 160px; height: 140px; margin-top: 0; }
+    .contents { height: 140px; width: 50px; }
+    .contents h3 { font-size: 10px; }
+  
+    /* Calendar */
+    .Calendar-inner {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .container5 { margin-left: 0; text-align: center; }
+    .container5 h4 { margin-left: auto; margin-right: auto; }
+    .Calendar2 { width: 95%; margin-top: 20px; }
+    .Calendar6 { margin-left: 0; width: 95%; margin-top: 20px; }
+    .calen-main { margin-left: 10px; margin-right: 10px; padding: 10px 20px; }
+  
+    /* Latest Events cards */
+    .evtcard { gap: 16px; }
+    .eventcard { width: 85%; }
+  
+    /* Footer */
+    .footer-inner {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .footer-content { width: 100%; }
+    .footer-about1 { flex-direction: column; gap: 24px; }
+    .footer-about .start-btn {
+      margin: 0;
+      width: fit-content;
+    }
+    .footer-socialmedia {
+      margin: 0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .quick h3 { margin-left: 0; min-width: unset; }
+    .quick-links { margin-left: 0; gap: 30px; }
+    .footer-name { margin-left: 0; text-align: center; margin-top: 24px; }
+  }
+  
+  
+  /* ── Mobile: up to 480px ── */
+  @media (max-width: 480px) {
+  
+    /* Nav */
+    header {
+      padding: 14px 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    .nav-pill {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 6px;
+    }
+    .nav-pill a {
+      font-size: 11px;
+      padding: 8px 14px;
+    }
+    .start-btn {
+      font-size: 11px;
+      padding: 10px 16px;
+    }
+  
+    /* Hero */
+    .hero-content {
+      left: 16px;
+      right: 16px;
+    }
+    .hero-content h1 {
+      font-size: 36px;
+      line-height: 1.1;
+    }
+    .hero-content p { font-size: 15px; }
+    .info-bar { font-size: 12px; padding: 12px 16px; }
+  
+    /* Events section top */
+    .container {
+      flex-direction: column;
+      padding: 24px 16px 0;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .container h1 { font-size: 28px; }
+    .loadmore { margin-left: 0; }
+  
+    /* Announcement cards */
+    .cards { padding: 0 16px; }
+    .container1 { width: 100%; margin-left: 0; font-size: 13px; }
+  
+    /* Saints */
+    .contain2 { padding-top: 30px; }
+    .container2 { flex-direction: column; align-items: center; }
+    .card { width: 90%; }
+    .card-img img { width: 44px; height: 44px; margin-left: 10px; }
+    .card-content { padding: 10px; }
+  
+    /* About */
+    .about img {
+      width: 88%;
+      border: 12px solid #f6ecec;
+    }
+    .about-content { width: 90%; }
+    .about-content h1 { font-size: 22px; }
+    .about-content p,
+    .about-content h1,
+    .about-content .start-btn { margin-left: 0; }
+    .about-content h4 { margin-left: 0; }
+  
+    /* Catholicos section */
+    .container3 h1 { font-size: 22px; }
+    .photos {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 16px;
+    }
+    .photos .imags img { width: 100% !important; border-radius: 16px; }
+  
+    /* Kalpana */
+    .Kalpana h1 { font-size: 28px; }
+    .main-box { border-radius: 12px; }
+    .sub .start-btn { width: 100%; justify-content: center; }
+  
+    /* Upcoming Updates strip */
+    .Updates {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding: 16px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .Updates::-webkit-scrollbar { display: none; }
+    .Updatess img {
+      width: 130px;
+      height: 110px;
+      flex-shrink: 0;
+      margin-top: 0;
+    }
+    .contents {
+      flex-shrink: 0;
+      height: 110px;
+      width: 44px;
+    }
+  
+    /* Calendar dates grid */
+    .days {
+      font-size: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .dates div { font-size: 13px; }
+    .active { width: 26px; height: 26px; border-radius: 7px; }
+    .calen-main { flex-direction: column; gap: 4px; padding: 10px 16px; }
+  
+    /* Latest Events */
+    .Latestevent-inner { margin-top: 30px; gap: 20px; }
+    .lastevet h1 { font-size: 24px; }
+    .evtcard { flex-direction: column; align-items: center; }
+    .eventcard { width: 90%; }
+    .eventcards img { width: 100%; margin-left: 0; border-radius: 12px; }
+  
+    /* Footer */
+    .footer { padding: 32px 16px; }
+    .footer-content { flex-direction: column; gap: 12px; }
+    .footer-content img { width: 56px; }
+    .quick-links { flex-direction: column; gap: 16px; }
+    .contact-us h6 { font-size: 12px; }
+    .footer-bottom { align-items: center; }
+    .footer-name { margin-left: 0; text-align: center; }
+  }
+
+  
